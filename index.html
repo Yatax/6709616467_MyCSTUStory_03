@@ -1,9 +1,9 @@
-<!--git push ไม่ได้ค่ะ เพราะเหมือนขนาดไฟล์จะเกินแต่พอเอาออกแล้วจะpushก็ทำไม่ได้อยู่ดีค่ะ-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>HomePage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mystyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,62 +19,57 @@
         </nav>
     </header>
     <div class="content-wrapper">
-        <aside class="sidebar" >
-        <div class="text2">
-            <h1>Name</h1>
-            <p>Yatawee Peerasombat</p>
-            <h1>Nickname</h1>
-            <p>Ink</p><br><br>
-            <h1>Faculty</h1>
-            <p>Computer Science</p><br><br>
-            <h1>Why I Chose This Major</h1>
-            <p>I am drawn to this faculty primarily because of my passion for coding.<br> 
-                The thrill of creating solutions through programming inspires me to delve deeper into this field.<br> 
-                Additionally, having my mentor, 9arm,  as a source of motivation encourages
-                 me to pursue this path with enthusiasm and determination.<br>
-                I specifically chose this university for several reasons. First and foremost, <br>
-                I appreciate that the curriculum does not require extensive physics coursework, <br>
-                allowing me to focus more on coding and software development.<br>
-                 Moreover, the university has an excellent reputation for its programs and faculty. <br>
-                 I am eager to learn from experienced educators who are dedicated to fostering student growth
-            </p>
-        </div>
-
-        </aside>
+       
         <main class="main-content">
             <h2 class="text1">MY PHOTO</h2>
-            <section class="top-content">
-                <img class="img1" src="resources/Myphoto.JPG" alt="Photo1">
+            <div>
+               <img class="img1" src="resources/Myphoto.JPG" alt="Photo1">
                 <img class="img1" src="resources/myphoto2.JPG" alt="Photo2">
                 <img class="img1" src="resources/myphoto3.jpg" alt="Photo3">
                 <img class="img1" src="resources/myphoto4.jpg" alt="Photo4">
                 <img class="img1" src="resources/myphoto5.JPG" alt="Photo5">
-            </section>
+           </div>
             <h2 class="text1">MY Fav song</h2>
-            <section class="bottom-content">
-                <figure class="image-wrapper">
-                    <img class="img2"src="resources/album.jpg" alt="My favorite song" onmouseover="playMusic()" onmouseout="pauseMusic()">
-                </figure>
+            <div class="bottom-content">
+               
+                <img class="img2"src="resources/album.jpg" alt="My favorite song" onmouseover="playMusic()" onmouseout="pauseMusic()">
                 <audio id="Audio1" src="resources/Pierrot.mp3" type="audio/mpeg"></audio>
                 <script>
                     var audio = document.getElementById("Audio1");
-            
+
                     function playMusic() {
                         audio.play();
                     }
-            
+
                     function pauseMusic() {
                         audio.pause();
                         audio.currentTime = 0;
                     }
                 </script>
-                <figure class="video-player">
+               
                     <video controls>
-                        <source src="resources/vlog.mp4" type="video/mp4">
+                        <source src="resources/clip.mp4" type="video/mp4">
                     </video>
-                </figure>
-            </section>
+               
+            </div>
         </main>
+        <aside class="sidebar" >
+            <div class="text2">
+                <h1>Name</h1>
+                <p>Yatawee Peerasombat</p>
+                <h1>Nickname</h1>
+                <p>Ink</p><br><br>
+                <h1>Faculty</h1>
+                <p>Computer Science</p><br><br>
+                <h1>Why I Chose This Major</h1>
+                <p>I am drawn to this faculty primarily because of my passion for coding.<br>
+                    The thrill of creating solutions through programming inspires me to delve deeper into this field.<br>
+                    Additionally, having my mentor, 9arm,  as a source of motivation encourages
+                     me to pursue this path with enthusiasm and determination.<br>
+                </p>
+            </div>
+    
+            </aside>
     </div>
     <footer class="footer">
         <p>&copy; 2024 Yatawee | Follow us on <a href="https://www.instagram.com/yxt_ax/" target="_blankpas"><img src="resources/iglogo.png" alt="Instagram Icon"></a></p>
